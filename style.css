@@ -7,6 +7,7 @@
 body {
     width: 1600px;
     margin: 0 auto;
+    height: 10000px;
 }
 
 h1 {
@@ -17,10 +18,30 @@ h1 {
 header.header {
     height: 744px;
     background: url('./assets/img/header-bg.jpg');
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.header__socials {
+    max-width: 170px;
+    width: 100%;
+    margin: 183px auto 0 auto;
+}
+
+.header__socials svg:hover {
+    stroke: #00AFDB;
+    cursor: pointer;
+}
+
+.header__socials svg:hover circle {
+    stroke: #00AFDB;
+}
+
+.header__socials ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
 }
 
 .btn {
@@ -47,29 +68,34 @@ header.header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width: 750px;
+    margin-top: 155px;
 }
 
 .header__content h1 {
     text-transform: uppercase;
     color: #fff;
+    letter-spacing: 4.5px;
+    text-align: center;
 }
 
 .header__content p {
     font-weight: 400;
     color: #fff;
     font-size: 18px;
-    margin: 30px 0;
     max-width: 504px;
     text-align: center;
     line-height: 140%;
+    margin-top: 22px;
+}
+
+.header__content button {
+    margin-top: 28px;
 }
 
 .header nav {
-    width: 100%;
-    padding-top: 25px;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    width: auto;
+    padding: 25px 518px 0 503px;
 }
 
 .header nav ul {
@@ -78,8 +104,7 @@ header.header {
     align-items: center;
     max-width: 582px;
     width: 100%;
-    margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header nav ul li {
@@ -87,6 +112,18 @@ header.header {
     font-weight: 400;
     position: relative;
     position: relative;
+}
+
+.header nav ul li:nth-child(1) {
+    margin-right: 85px;
+}
+
+.header nav ul li:nth-last-child(1) {
+    margin-left: 85px;
+}
+
+.header nav ul li.header__main-logo {
+    margin: 0 100px;
 }
 
 .header nav ul li.active a {
