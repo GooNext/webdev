@@ -206,7 +206,7 @@ footer.footer ul li:nth-child(2):after {
 
 .newsletter {
     background: url('./assets/img/newsletter-bg.jpg');
-    height: 598px;
+    height: 522px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,7 +234,7 @@ footer.footer ul li:nth-child(2):after {
     display: flex;
     align-items: center;
     outline: none;
-    margin-bottom: 78px;
+    margin-bottom: 17px;
 }
 
 .newsletter button {
@@ -248,7 +248,7 @@ footer.footer ul li:nth-child(2):after {
 }
 
 .implement {
-    padding: 120px 0 140px 0;
+    padding: 120px 0 133px 0;
 }
 
 .implement-container {
